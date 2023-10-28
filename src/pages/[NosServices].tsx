@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import { Heading } from '@chakra-ui/react'
-import WithSubnavigation from '@/component/NavHeadAccueil'
-import SmallWithLogoLeft from '@/component/FooterAccueil'
+import GridListWithHeading from '@/component/présentation'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,9 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <WithSubnavigation></WithSubnavigation>
-        <Heading as="h1" textAlign="center" id="Presentation">Terrieur Père & Fils</Heading>
-        <SmallWithLogoLeft></SmallWithLogoLeft>
+        
       </main>
     </>
   )
