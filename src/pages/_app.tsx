@@ -7,8 +7,7 @@ import type { AppProps } from 'next/app'
 export default function App({ Component, pageProps }: AppProps) {
   return <ChakraProvider>
           <WithAction></WithAction>
-          <GridListWithHeading></GridListWithHeading>
-          <SmallCentered></SmallCentered>
           <Component {...pageProps} />
+          <SmallCentered></SmallCentered>      
       </ChakraProvider>
 }
