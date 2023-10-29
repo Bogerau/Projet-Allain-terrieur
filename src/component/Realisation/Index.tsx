@@ -35,14 +35,13 @@ import {
         </Container>
         <Center>
           <Button 
-            colorScheme="blue" 
             w="fit-content"
-            bg={color === false ? 'green.400' : 'red.400'}
+            bg={color === false ? 'green.400' : 'blue.400'}
             rounded={'full'}
             px={6}
             onClick={toggleAffichage}
           >
-            {afficherGrid ? 'Cacher l\'équipe' : 'Afficher notre équipe'}
+            {afficherGrid ? 'Cacher nos réalisations' : 'Voir nos réalisations'}
           </Button>
         </Center>
         {afficherGrid && 

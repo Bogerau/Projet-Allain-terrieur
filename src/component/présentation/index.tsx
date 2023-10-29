@@ -21,6 +21,7 @@ import {
   FcManager,
 } from 'react-icons/fc'
 
+
 interface CardProps {
   heading: string
   description: string
@@ -28,6 +29,10 @@ interface CardProps {
   href: string
   
 }
+
+const redirectToContactPage = () => {
+  window.location.href = '/contact'; // Remplacez '/contact' par l'URL de votre page de contact
+};
 
 const Card = ({ heading, description, icon, href }: CardProps) => {
   return (
@@ -55,7 +60,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
             {description}
           </Text>
         </Box>
-        <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
+        <Button variant={'link'} colorScheme={'blue'} size={'sm'} onClick={redirectToContactPage}>
           Nous contacter
         </Button>
       </Stack>

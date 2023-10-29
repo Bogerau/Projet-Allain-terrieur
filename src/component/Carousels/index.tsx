@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react'
+import { Box, IconButton, VStack, useBreakpointValue } from '@chakra-ui/react'
 // Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi'
 // And react-slick as our Carousel Lib
@@ -40,6 +40,7 @@ export default function Carousel() {
   ]
 
   return (
+    <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
     <Box position={'relative'} height={'1000px'} width={'full'} overflow={'hidden'}>
       {/* CSS files for react-slick */}
       <link
@@ -93,5 +94,6 @@ export default function Carousel() {
         ))}
       </Slider>
     </Box>
+    </VStack>
   )
 }

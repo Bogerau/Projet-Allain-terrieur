@@ -15,8 +15,7 @@ function BoutonEquipe() {
   const [color, setColor] = useState(false);
 
   const toggleAffichage = () => {
-    setAfficherGrid(!afficherGrid); 
-    setColor(color == false ? true : false)
+    const path="/contact"
   };
 
   useEffect(() => {
@@ -40,9 +39,8 @@ function BoutonEquipe() {
       </Container>
       <Center>
         <Button 
-        colorScheme="blue" 
         w="fit-content"
-        bg={color == false ? 'green.400' : 'red.400'}
+        bg={color == false ? 'green.400' : 'blue.400'}
         rounded={'full'}
         px={6}
         onClick={toggleAffichage}>

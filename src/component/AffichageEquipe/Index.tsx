@@ -14,17 +14,17 @@ import {
 const testimonials = [
   {
     name: 'Alain Terieur',
-    role: ' Chef de projet d\'interieur',
+    role: ' Chef de projet d\'intérieur',
     content:
-      'Fondateur de Terrieur père & fils, Alain Terrieur sera le chef de projet pour tous vos projets d\'intérieur.',
+      'Fondateur de Terrieur père & fils, Alain Terieur sera le chef de projet pour tous vos projets d\'intérieur.',
     avatar:
-      '/Alain.jpg',
+      'Alain.jpg',
   },
   {
     name: 'Alex Terieur',
-    role: 'Chef de projet d\'exterieur',
+    role: 'Chef de projet d\'extérieur',
     content:
-      "Fondateur de Terieur père & fils, Alex Terieur sera le chef de projet pour tous vos projets d\'exterieur.",
+      "Fondateur de Terieur père & fils, Alex Terieur sera le chef de projet pour tous vos projets d\'extérieur.",
     avatar:
       'Alex.jpg'
   },
@@ -154,7 +154,6 @@ export default function GridBlurredBackdrop() {
           <TestimonialCard key={index} {...cardInfo} index={index} />
         ))}
       </SimpleGrid>
-      
     </Flex>
   )
 }
