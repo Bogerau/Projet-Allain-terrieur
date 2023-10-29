@@ -11,15 +11,25 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react'
-import { ReactElement } from 'react'
-import {
-  FcAbout,
-  FcAssistant,
-  FcCloseUpMode,
-  FcCollaboration,
-  FcDonate,
-  FcManager,
-} from 'react-icons/fc'
+
+import { 
+  ReactElement 
+} from 'react'
+
+import{
+  FaUtensils,
+  FaTree,
+  FaBed,
+  FaHome,
+  FaSeedling,
+  FaLightbulb,
+  FaRoad,
+  FaWater, 
+} from 'react-icons/fa'
+
+import { 
+  Link,
+} from "react-router-dom"
 
 interface CardProps {
   heading: string
@@ -29,7 +39,7 @@ interface CardProps {
   
 }
 
-const Card = ({ heading, description, icon, href }: CardProps) => {
+const Card = ({ heading, description, icon}: CardProps) => {
   return (
     <Box
       maxW={{ base: 'full', md: '275px' }}
@@ -46,7 +56,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
           justify={'center'}
           color={'white'}
           rounded={'full'}
-          bg={useColorModeValue('gray.100', 'gray.700')}>
+          bg={useColorModeValue('black', 'black')}>
           {icon}
         </Flex>
         <Box mt={2}>
@@ -78,54 +88,54 @@ export default function gridListWith() {
 
       <Container maxW={'7xl'} mt={12}>
         <Flex flexWrap="wrap" gridGap={4} justify="center">
-          <Card
-            heading={'Décoration intérieur pour appartement'}
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
-            description={'La décoration de votre appartement ne vous plait plus nous nous occupons de tout, du devis à la réalisation ? '}
-            href={'#'}
-          />
-          <Card
-            heading={'Décoration intérieur pour maison'}
-            icon={<Icon as={FcCollaboration} w={10} h={10} />}
-            description={'La décoration de votre maison ne vous plait plus nous nous occupons de tout, du devis à la réalisation ?'}
-            href={'#'}
-          />
-          <Card
-            heading={'Plan de construction pour maison sur mesure'}
-            icon={<Icon as={FcDonate} w={10} h={10} />}
-            description={'Vous souhaitez acheter un terrain afin de construire votre maison ? Notre équipe experte dans le domaine vous accompagne de la confection des plans à la réalisation.'}
-            href={'/contact'}
-          />
-          <Card
-            heading={'Aménagement extérieur de maison'}
-            icon={<Icon as={FcCloseUpMode} w={10} h={10} />}
-            description={'La décoration intérieur est très importante mais nous pouvons également vous accompagner dans la création de terrasse, aménagement de jardin etc...'}
-            href={'/contact'}
-          />
-          <Card
-            heading={'Décoration intérieur pour appartement'}
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
-            description={'La décoration de votre appartement ne vous plait plus nous nous occupns de tout, du devis à la réalisation ? '}
-            href={'/contact'}
-          />
-          <Card
-            heading={'Décoration intérieur pour appartement'}
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
-            description={'La décoration de votre appartement ne vous plait plus nous nous occupns de tout, du devis à la réalisation ? '}
-            href={'/contact'}
-          />
-          <Card
-            heading={'Décoration intérieur pour appartement'}
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
-            description={'La décoration de votre appartement ne vous plait plus nous nous occupns de tout, du devis à la réalisation ? '}
-            href={'/contact'}
-          />
-          <Card
-            heading={'Décoration intérieur pour appartement'}
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
-            description={'La décoration de votre appartement ne vous plait plus nous nous occupns de tout, du devis à la réalisation ? '}
-            href={'/contact'}
-          />
+  <Card
+    heading={'Décoration intérieur pour appartement'}
+    icon={<FaHome size={40} />}
+    description={'La décoration de votre appartement ne vous plait plus nous nous occupons de tout, du devis à la réalisation.'}
+    href={'/contact'}
+/>  <link href="/contact" />
+<Card
+    heading={'Rénovation de cuisine'}
+    icon={<FaUtensils size={40} />}
+    description={'Donnez un nouveau souffle à votre cuisine. De la planification à linstallation, nous sommes à vos côtés.'}
+    href={'#'}
+/>
+<Card
+    heading={'Aménagement extérieur'}
+    icon={<FaTree size={40} />}
+    description={'Transformez votre espace extérieur en un oasis de détente. Nous vous aidons à créer lespace de vos rêves.'}
+    href={'#'}
+/>
+<Card
+    heading={'Relooking de chambre'}
+    icon={<FaBed size={40} />}
+    description={'Rafraîchissez votre espace de repos avec des designs modernes et confortables.'}
+    href={'/'}
+/>
+<Card
+    heading={'Aménagement Paysager'}
+    icon={<FaSeedling size={40} />}
+    description={'Créez un jardin à couper le souffle avec notre expertise en aménagement paysager.'}
+    href={'#'}
+/>
+<Card
+    heading={'Éclairage Extérieur'}
+    icon={<FaLightbulb size={40} />}
+    description={'Illuminez votre espace extérieur pour des soirées magiques.'}
+    href={'#'}
+/>
+<Card
+    heading={'Allées & Chemins'}
+    icon={<FaRoad size={40} />}
+    description={'Améliorez l accès et le look de votre propriété avec des allées et des chemins rénovés.'}
+    href={'#'}
+/>
+<Card
+    heading={'Fontaines & Bassins'}
+    icon={<FaWater size={40} />}
+    description={'Ajoutez une touche de sérénité à votre jardin avec des fontaines et bassins.'}
+    href={'#'}
+/>
         </Flex>
       </Container>
     </Box>
