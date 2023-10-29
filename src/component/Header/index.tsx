@@ -15,19 +15,30 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+  useColorMode,
 } from '@chakra-ui/react'
 import {
   HamburgerIcon,
   CloseIcon,
   ChevronDownIcon,
   ChevronRightIcon,
+  MoonIcon,
+  SunIcon,
 } from '@chakra-ui/icons'
+import { BsMoonStarsFill, BsSun } from 'react-icons/bs'
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure()
 
+  const { colorMode, toggleColorMode } = useColorMode()
+
   return (
-    <Box>
+    <Box
+      position="sticky"
+      top="0"
+      zIndex="1000"
+      backgroundColor={useColorModeValue('white', 'gray.800')}
+    >
       <Flex
         bg={useColorModeValue('white', 'gray.800')}
         color={useColorModeValue('gray.600', 'white')}
@@ -67,22 +78,13 @@ export default function WithSubnavigation() {
           justify={'flex-end'}
           direction={'row'}
           spacing={6}>
-          <Button as={'a'} fontSize={'sm'} fontWeight={400} variant={'link'} href={'#'}>
-            Sign In
-          </Button>
           <Button
-            as={'a'}
-            display={{ base: 'none', md: 'inline-flex' }}
-            fontSize={'sm'}
-            fontWeight={600}
-            color={'white'}
-            bg={'pink.400'}
-            href={'#'}
-            _hover={{
-              bg: 'pink.300',
-            }}>
-            Sign Up
-          </Button>
+           aria-label="Toggle Color Mode"
+           onClick={toggleColorMode}
+           _focus={{ boxShadow: 'none' }}
+           w="fit-content">
+           {colorMode === 'light' ? <BsMoonStarsFill /> : <BsSun />}
+      </Button>
         </Stack>
       </Flex>
 
@@ -249,32 +251,32 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: 'Présentation',
         subLabel: '',
-        href: '#Presentation',
+        href: '/#Presentation',
       },
       {
         label: 'Notre histoire',
         subLabel: '',
-        href: '#Histoire',
+        href: '/#Histoire',
       },
       {
         label: 'Notre Objectif',
         subLabel: '',
-        href: '#Objectif',
+        href: '/#Objectif',
       },
       {
         label: 'Notre Équipe',
         subLabel: '',
-        href: '#Equipe',
+        href: '/#Equipe',
       },
       {
         label: 'Nos Réalisations',
         subLabel: '',
-        href: '#Realisations',
+        href: '/#Realisations',
       },
       {
         label: 'Nos Réseaux',
         subLabel: '',
-        href: '#Reseaux',
+        href: '/#Reseaux',
       },
 
       

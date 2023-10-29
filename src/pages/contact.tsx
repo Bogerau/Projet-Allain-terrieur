@@ -13,7 +13,7 @@ export default function Home() {
         <title>Terieur père & fils</title>
         <meta name="description" content="Terieur Creation" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/TerieurLogo.ico" />
+        <link rel="icon" href="/TerieurLogo.ico"/>
       </Head>
       <main>
         <Contact/>
