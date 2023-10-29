@@ -27,7 +27,7 @@ import {
       <div>
         <Container maxW={'7xl'} p="12">
           <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
-            <Heading as="h2" id="Equipe">Nos Réalisations</Heading>
+            <Heading as="h2" id="Realisations">Nos Réalisations</Heading>
             <Text as="p" fontSize="lg">
                 Vous pourrez retrouver ici toutes nos réalisations récentes !
             </Text>
