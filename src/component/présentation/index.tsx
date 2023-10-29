@@ -126,12 +126,6 @@ export default function gridListWith() {
             description={'La décoration de votre appartement ne vous plait plus nous nous occupns de tout, du devis à la réalisation ? '}
             href={'/contact'}
           />
-          <Card
-            heading={'Décoration intérieur pour appartement'}
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
-            description={'La décoration de votre appartement ne vous plait plus nous nous occupns de tout, du devis à la réalisation ? '}
-            href={'/contact'}
-          />
         </Flex>
       </Container>
     </Box>
