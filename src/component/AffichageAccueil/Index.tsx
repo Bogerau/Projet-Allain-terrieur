@@ -17,6 +17,7 @@ import {
   Button,
   color,
 } from '@chakra-ui/react'
+import Carousel from '../Carousels'
 
 interface IBlogTags {
   tags: Array<string>
@@ -65,7 +66,7 @@ const BlogAuthor = (props: BlogAuthorProps) => {
   )
 }
 
-const ArticleList = () => {
+const BodyAccueil = () => {
   return (
     <Container maxW={'7xl'} p="12">
       <Box
@@ -85,12 +86,7 @@ const ArticleList = () => {
             marginLeft={{ base: '0', sm: '5%' }}
             marginTop="5%">
             <Box textDecoration="none" _hover={{ textDecoration: 'none' }}>
-              <Image
-                borderRadius="lg"
-                src="Epsi.png"
-                alt="Logo Epsi"
-                objectFit="contain"
-              />
+            <Image src='https://image.noelshack.com/fichiers/2023/43/5/1698421717-capture-d-ecran-2023-10-27-a-17-27-19.png' alt='Logo' />
             </Box>
           </Box>
           <Box zIndex="1" width="100%" position="absolute" height="100%">
@@ -111,10 +107,10 @@ const ArticleList = () => {
           flexDirection="column"
           justifyContent="center"
           marginTop={{ base: '3', sm: '0' }}>
-          <BlogTags tags={['Information personnel',]} />
+          <BlogTags tags={['Présentation',]} />
           <Heading marginTop="1">
             <Text textDecoration="none" _hover={{ textDecoration: 'none' }}>
-              Présentation
+              Bienvenue !
             </Text>
           </Heading>
           <Text
@@ -122,19 +118,21 @@ const ArticleList = () => {
             marginTop="2"
             color={useColorModeValue('gray.700', 'gray.200')}
             fontSize="lg">
-            Bienvenue sur notre site web dédiée a la rénovatotion d'intérieur et d'exterrieur, Vous avez une envie de rénover votre maison ? vous etes au bon endroit ! 
+            Notre site web dédiée a la rénovatotion d'intérieur et d'exterrieur, Vous avez une envie de rénover votre maison ? vous etes au bon endroit ! 
           </Text>
         </Box>
       </Box>
+      <Carousel/>
       <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
-        <Heading as="h2">Notre Histoire</Heading>
+        <Heading as="h2" id="Histoire">Notre Histoire</Heading>
         <Text as="p" fontSize="lg">
         Terrieur est une entreprise de rénovation de maisons entre père et fils, créée le 27 octobre 2023. 
         Depuis son plus jeune âge, Alex Terrieur aidait son père à réaliser de petits travaux et à monter des meubles, ce qui a créé une 
         passion commune entre eux. Au fil du temps, Alain Terrieur a partagé son savoir-faire avec son fils, renforçant ainsi les liens familiaux. 
         Cette passion commune entre père et fils nous a donné l'envie de créer cette entreprise et de faire de cette passion notre métier.
-        
-
+        </Text>
+        <Heading as="h2" id="Objectif">Notre Objectif</Heading>
+        <Text as="p" fontSize="lg">
         Notre objectif est de vous aider 
         à réaliser vos rêves les plus fous. Nous mettrons tout notre savoir-faire et notre énergie dans la concrétisation de vos idées, 
         que ce soit un simple changement de peinture ou une rénovation complète. Nous sommes là pour vous accompagner.
@@ -152,4 +150,4 @@ const ArticleList = () => {
   )
 }
 
-export default ArticleList
+export default BodyAccueil

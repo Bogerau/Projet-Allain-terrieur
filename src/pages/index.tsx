@@ -1,7 +1,11 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import { Heading } from '@chakra-ui/react'
-import ArticleList from '@/component/AffichageAccueil/Index'
+import BoutonEquipe from '@/component/AffichageEquipe/Hook'
+import Carousel from '@/component/Carousels'
+import BodyAccueil from '@/component/AffichageAccueil/Index'
+import BoutonProject from '@/component/Realisation/Index'
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,7 +21,9 @@ export default function Home() {
       </Head>
       <main>
         <Heading as="h1" textAlign="center" id="Presentation">Terrieur Père & Fils</Heading>
-        <ArticleList></ArticleList>
+        <BodyAccueil/>
+        <BoutonEquipe/>
+        <BoutonProject/>
       </main>
     </>
   )
