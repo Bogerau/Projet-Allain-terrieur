@@ -58,7 +58,7 @@ export default function FooterBar() {
         justify={'center'}
         align={'center'}>
         <Box boxSize='150px'>
-          <Image src='https://image.noelshack.com/fichiers/2023/43/5/1698421717-capture-d-ecran-2023-10-27-a-17-27-19.png' alt='Logo' />
+          <Image src='logo.png' alt='Logo' />
           </Box>
         <Stack direction={'row'} spacing={6}>
           
