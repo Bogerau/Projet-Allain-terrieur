@@ -78,7 +78,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
   )
 }
 
-export default function gridListWith() {
+export default function NosServicesBody() {
   return (
     <Box p={4}>
       <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>

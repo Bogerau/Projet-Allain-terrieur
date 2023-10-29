@@ -50,13 +50,12 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Text
-            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-            fontFamily={'heading'}
-            color={useColorModeValue('gray.800', 'white')}>
-            Logo
-          </Text>
-
+        <Box
+            as="img"
+            src="logo.png"
+            alt="Votre Logo"
+            boxSize="40px"
+        />
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
           </Flex>
@@ -247,15 +246,37 @@ const NAV_ITEMS: Array<NavItem> = [
     href:'/',
     children: [
       {
+        label: 'Présentation',
+        subLabel: '',
+        href: '#Presentation',
+      },
+      {
         label: 'Notre histoire',
         subLabel: '',
         href: '#Histoire',
       },
       {
-        label: 'New & Noteworthy',
-        subLabel: 'Up-and-coming Designers',
-        href: '#',
+        label: 'Notre Objectif',
+        subLabel: '',
+        href: '#Objectif',
       },
+      {
+        label: 'Notre Équipe',
+        subLabel: '',
+        href: '#Equipe',
+      },
+      {
+        label: 'Nos Réalisations',
+        subLabel: '',
+        href: '#Realisations',
+      },
+      {
+        label: 'Nos Réseaux',
+        subLabel: '',
+        href: '#Reseaux',
+      },
+
+      
     ],
   },
   {
