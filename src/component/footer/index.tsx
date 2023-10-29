@@ -86,7 +86,7 @@ export default function FooterBar() {
           spacing={4}
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
-          <Text>© 2022 Yun et Baptiste. Tout droits réservés</Text>
+          <Text>© 2023 Yun et Baptiste. Tout droits réservés</Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Github'} href={'https://github.com/Bogerau/Projet-Allain-terrieur.git'}>
               <FaGithub />
