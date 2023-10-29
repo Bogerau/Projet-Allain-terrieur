@@ -232,4 +232,8 @@ const NAV_ITEMS: Array<NavItem> = [
     label: 'Nos Services',
     href: '/NosServices',
   },
+  {
+    label: 'Nous contacter',
+    href: '/contact',
+  },
 ]

@@ -15,6 +15,7 @@ import { ReactElement } from 'react'
 import {
   FcAbout,
   FcAssistant,
+  FcCloseUpMode,
   FcCollaboration,
   FcDonate,
   FcManager,
@@ -75,7 +76,7 @@ export default function gridListWith() {
         </Text>
       </Stack>
 
-      <Container maxW={'5xl'} mt={12}>
+      <Container maxW={'7xl'} mt={12}>
         <Flex flexWrap="wrap" gridGap={4} justify="center">
           <Card
             heading={'Décoration intérieur pour appartement'}
@@ -93,13 +94,43 @@ export default function gridListWith() {
             heading={'Plan de construction pour maison sur mesure'}
             icon={<Icon as={FcDonate} w={10} h={10} />}
             description={'Vous souhaitez acheter un terrain afin de construire votre maison ? Notre équipe experte dans le domaine vous accompagne de la confection des plans à la réalisation.'}
-            href={'#'}
+            href={'/contact'}
           />
           <Card
             heading={'Aménagement extérieur de maison'}
-            icon={<Icon as={FcManager} w={10} h={10} />}
+            icon={<Icon as={FcCloseUpMode} w={10} h={10} />}
             description={'La décoration intérieur est très importante mais nous pouvons également vous accompagner dans la création de terrasse, aménagement de jardin etc...'}
-            href={'#'}
+            href={'/contact'}
+          />
+          <Card
+            heading={'Décoration intérieur pour appartement'}
+            icon={<Icon as={FcAssistant} w={10} h={10} />}
+            description={'La décoration de votre appartement ne vous plait plus nous nous occupns de tout, du devis à la réalisation ? '}
+            href={'/contact'}
+          />
+          <Card
+            heading={'Décoration intérieur pour appartement'}
+            icon={<Icon as={FcAssistant} w={10} h={10} />}
+            description={'La décoration de votre appartement ne vous plait plus nous nous occupns de tout, du devis à la réalisation ? '}
+            href={'/contact'}
+          />
+          <Card
+            heading={'Décoration intérieur pour appartement'}
+            icon={<Icon as={FcAssistant} w={10} h={10} />}
+            description={'La décoration de votre appartement ne vous plait plus nous nous occupns de tout, du devis à la réalisation ? '}
+            href={'/contact'}
+          />
+          <Card
+            heading={'Décoration intérieur pour appartement'}
+            icon={<Icon as={FcAssistant} w={10} h={10} />}
+            description={'La décoration de votre appartement ne vous plait plus nous nous occupns de tout, du devis à la réalisation ? '}
+            href={'/contact'}
+          />
+          <Card
+            heading={'Décoration intérieur pour appartement'}
+            icon={<Icon as={FcAssistant} w={10} h={10} />}
+            description={'La décoration de votre appartement ne vous plait plus nous nous occupns de tout, du devis à la réalisation ? '}
+            href={'/contact'}
           />
         </Flex>
       </Container>
