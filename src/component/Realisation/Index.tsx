@@ -36,7 +36,7 @@ import {
         <Center>
           <Button 
             w="fit-content"
-            bg={color === false ? 'green.400' : 'blue.400'}
+            bg={color === false ? 'blue.400' : 'grey'}
             rounded={'full'}
             px={6}
             onClick={toggleAffichage}

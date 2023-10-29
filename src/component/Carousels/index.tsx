@@ -36,7 +36,6 @@ export default function Carousel() {
     'maison2.jpg',
     'maison3.jpg',
     'maison4.jpg',
-    
   ]
 
   return (
