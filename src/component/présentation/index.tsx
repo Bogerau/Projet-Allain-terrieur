@@ -31,6 +31,7 @@ import {
   Link,
 } from "react-router-dom"
 
+
 interface CardProps {
   heading: string
   description: string
@@ -39,7 +40,15 @@ interface CardProps {
   
 }
 
+<<<<<<< HEAD
 const Card = ({ heading, description, icon}: CardProps) => {
+=======
+const redirectToContactPage = () => {
+  window.location.href = '/contact'; // Remplacez '/contact' par l'URL de votre page de contact
+};
+
+const Card = ({ heading, description, icon, href }: CardProps) => {
+>>>>>>> eb910485b70343ea17bb4712bd38a964ffaa7e3c
   return (
     <Box
       maxW={{ base: 'full', md: '275px' }}
@@ -65,7 +74,7 @@ const Card = ({ heading, description, icon}: CardProps) => {
             {description}
           </Text>
         </Box>
-        <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
+        <Button variant={'link'} colorScheme={'blue'} size={'sm'} onClick={redirectToContactPage}>
           Nous contacter
         </Button>
       </Stack>

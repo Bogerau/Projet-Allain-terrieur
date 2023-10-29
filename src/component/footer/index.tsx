@@ -10,7 +10,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from '@chakra-ui/react'
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaGithub, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { ReactNode } from 'react'
 
 const Logo = (props: any) => {
@@ -59,7 +59,7 @@ const SocialButton = ({
   )
 }
 
-export default function SmallCentered() {
+export default function FooterBar() {
   return (
     <Box
       bg={useColorModeValue('gray.50', 'gray.900')}
@@ -77,11 +77,14 @@ export default function SmallCentered() {
           </Box>
         <Stack direction={'row'} spacing={6}>
           
-          <Box as="a" href={'#'}>
+          <Box as="a" href={'/'}>
             Présentation
           </Box>
-          <Box as="a" href={'#'}>
+          <Box as="a" href={'/NosServices'}>
             Nos services
+          </Box>
+          <Box as="a" href={'/contact'}>
+            Nous Contacter
           </Box>
         </Stack>
       </Container>
@@ -100,13 +103,10 @@ export default function SmallCentered() {
           align={{ base: 'center', md: 'center' }}>
           <Text>© 2022 Yun et Baptiste. Tout droits réservés</Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={'#'}>
-              <FaTwitter />
+            <SocialButton label={'Github'} href={'https://github.com/Bogerau/Projet-Allain-terrieur.git'}>
+              <FaGithub />
             </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
-              <FaYoutube />
-            </SocialButton>
-            <SocialButton label={'Instagram'} href={'#'}>
+            <SocialButton label={'Instagram'} href={'https://www.instagram.com/terieur_pere_fils/'}>
               <FaInstagram />
             </SocialButton>
           </Stack>

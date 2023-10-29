@@ -126,11 +126,13 @@ const BodyAccueil = () => {
       <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
         <Heading as="h2" id="Histoire">Notre Histoire</Heading>
         <Text as="p" fontSize="lg">
-        Terrieur est une entreprise de rénovation de maisons entre père et fils, créée le 27 octobre 2023. 
-        Depuis son plus jeune âge, Alex Terrieur aidait son père à réaliser de petits travaux et à monter des meubles, ce qui a créé une 
-        passion commune entre eux. Au fil du temps, Alain Terrieur a partagé son savoir-faire avec son fils, renforçant ainsi les liens familiaux. 
+        Terieur est une entreprise de rénovation de maisons entre père et fils, créée le 27 octobre 2023. 
+        Depuis son plus jeune âge, Alex Terieur aidait son père à réaliser de petits travaux et à monter des meubles, ce qui a créé une 
+        passion commune entre eux. Au fil du temps, Alain Terieur a partagé son savoir-faire avec son fils, renforçant ainsi les liens familiaux. 
         Cette passion commune entre père et fils nous a donné l'envie de créer cette entreprise et de faire de cette passion notre métier.
         </Text>
+      </VStack>
+      <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
         <Heading as="h2" id="Objectif">Notre Objectif</Heading>
         <Text as="p" fontSize="lg">
         Notre objectif est de vous aider 
@@ -138,16 +140,15 @@ const BodyAccueil = () => {
         que ce soit un simple changement de peinture ou une rénovation complète. Nous sommes là pour vous accompagner.
         </Text>
         <Text as="p" fontSize="lg">
-            Les deux fondateurs de l'entreprise sont Alain Terrieur et son fils, Alex Terrieur. Alain Terrieur sera votre chef de projet 
+            Les deux fondateurs de l'entreprise sont Alain Terieur et son fils, Alex Terieur. Alain Terieur sera votre chef de projet 
             pour vos rénovations intérieures. Il se chargera de superviser nos équipes afin de mener à bien le projet rapidement et efficacement.
         </Text>
         <Text as="p" fontSize="lg">
-        Alex Terrieur se chargera de gérer tous les projets à l'extérieur de votre maison, que ce soit pour votre jardin ou même la façade de votre maison. 
-        Alex Terrieur supervisera ses équipes pour faire de votre rêve une réalité.
+        Alex Terieur se chargera de gérer tous les projets à l'extérieur de votre maison, que ce soit pour votre jardin ou même la façade de votre maison. 
+        Alex Terieur supervisera ses équipes pour faire de votre rêve une réalité.
         </Text>
       </VStack>
     </Container>
   )
 }
-
 export default BodyAccueil
