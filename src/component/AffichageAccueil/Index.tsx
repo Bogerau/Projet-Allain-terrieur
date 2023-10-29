@@ -36,7 +36,7 @@ const BlogTags = (props: Props) => {
     <HStack spacing={2} marginTop={marginTop}>
       {tags.map((tag) => {
         return (
-          <Tag size={'md'} variant="solid" colorScheme="orange" key={tag}>
+          <Tag size={'md'} variant="solid" colorScheme="blue" key={tag}>
             {tag}
           </Tag>
         )
@@ -92,8 +92,8 @@ const BodyAccueil = () => {
           <Box zIndex="1" width="100%" position="absolute" height="100%">
             <Box
               bgGradient={useColorModeValue(
-                'radial(orange.600 1px, transparent 1px)',
-                'radial(orange.300 1px, transparent 1px)',
+                'radial(blue.400 1px, transparent 1px)',
+                'radial(blue.100 1px, transparent 1px)',
               )}
               backgroundSize="20px 20px"
               opacity="0.4"
