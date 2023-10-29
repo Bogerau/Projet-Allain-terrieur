@@ -40,15 +40,11 @@ interface CardProps {
   
 }
 
-<<<<<<< HEAD
-const Card = ({ heading, description, icon}: CardProps) => {
-=======
 const redirectToContactPage = () => {
   window.location.href = '/contact'; // Remplacez '/contact' par l'URL de votre page de contact
 };
 
 const Card = ({ heading, description, icon, href }: CardProps) => {
->>>>>>> eb910485b70343ea17bb4712bd38a964ffaa7e3c
   return (
     <Box
       maxW={{ base: 'full', md: '275px' }}
