@@ -26,6 +26,7 @@ interface CardProps {
   description: string
   icon: ReactElement
   href: string
+  
 }
 
 const Card = ({ heading, description, icon, href }: CardProps) => {
@@ -70,7 +71,7 @@ export default function gridListWith() {
           Nos Services
         </Heading>
         <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
-          Alex Térrieur vous propose de nombreuses préstations de décoration d'intérieur et d'éxtérieur. 
+          Terieur Père & Fils vous propose de nombreuses préstations de décoration d'intérieur et d'éxtérieur. 
           Retrouvez les détails de ces dernières ci-dessous.
         </Text>
       </Stack>
@@ -80,10 +81,15 @@ export default function gridListWith() {
           <Card
             heading={'Décoration intérieur pour appartement'}
             icon={<Icon as={FcAssistant} w={10} h={10} />}
-            description={'La décoration de votre appartement ne vous plait plus nous nous occupns de tout, du devis à la réalisation ? '}
-            href={'/contact'}
+            description={'La décoration de votre appartement ne vous plait plus nous nous occupons de tout, du devis à la réalisation ? '}
+            href={'#'}
           />
-         
+          <Card
+            heading={'Décoration intérieur pour maison'}
+            icon={<Icon as={FcCollaboration} w={10} h={10} />}
+            description={'La décoration de votre maison ne vous plait plus nous nous occupons de tout, du devis à la réalisation ?'}
+            href={'#'}
+          />
           <Card
             heading={'Plan de construction pour maison sur mesure'}
             icon={<Icon as={FcDonate} w={10} h={10} />}
