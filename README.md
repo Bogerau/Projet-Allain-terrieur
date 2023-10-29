@@ -1,4 +1,4 @@
-Bienvenue sur le projet Terroir Père & Fils développé par Yun et Baptiste.
+Bienvenue sur le projet Terieur Père & Fils développé par Yun et Baptiste.
 
 Pour initier le projet, il vous suffit de faire un 'git clone' du dépôt puis d'entrer la commande :
 
