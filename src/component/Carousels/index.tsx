@@ -23,7 +23,6 @@ export default () => {
       <SwiperSlide><img src="/images/Maison1.png" alt="première maison" /></SwiperSlide>
       <SwiperSlide><img src="/images/Maison2.png" alt="deuxième maison" /></SwiperSlide>
       <SwiperSlide><img src="/images/Maison3.png" alt="troisième maison" /></SwiperSlide>
-      <SwiperSlide><img src="/images/Maison4v2.png" alt="troisième maison" /></SwiperSlide>
     </Swiper>
   );
 };
