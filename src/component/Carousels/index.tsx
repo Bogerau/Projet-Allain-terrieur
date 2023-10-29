@@ -32,10 +32,10 @@ export default function Carousel() {
 
   // These are the images used in the slide
   const cards = [
-    'maison1.jpg',
-    'maison2.jpg',
-    'maison3.jpg',
-    'maison4.jpg',
+    'maison1.png',
+    'maison2.png',
+    'maison3.png',
+    'maison4.png',
   ]
 
   return (
