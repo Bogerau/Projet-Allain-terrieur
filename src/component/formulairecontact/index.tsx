@@ -51,7 +51,7 @@ export default function Contact() {
                       <Button
                         size="md"
                         height="48px"
-                        width="200px"
+                        width="300px"
                         variant="ghost"
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
