@@ -85,7 +85,7 @@ export default function NosServicesBody() {
         <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
           Nos Services
         </Heading>
-        <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
+        <Text color={'white, black'} fontSize={{ base: 'sm', sm: 'lg' }}>
           Terieur Père & Fils vous propose de nombreuses préstations de décoration d'intérieur et d'éxtérieur. 
           Retrouvez les détails de ces dernières ci-dessous.
         </Text>

@@ -107,7 +107,7 @@ export default function Contact() {
                           _hover={{
                             borderRadius: 'gray.300',
                           }}
-                          placeholder="message"
+                          
                         />
                       </FormControl>
                       <FormControl id="name" float="right">
